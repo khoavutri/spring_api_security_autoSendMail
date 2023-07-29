@@ -21,7 +21,7 @@ public class jobShedule {
 	@Autowired
 	userServiceImpl impl;
 	//giây phút giờ ngày tháng thứ
-	@Scheduled(cron = "0 30 16 * * *")
+	@Scheduled(cron = "0 30 7 * * *")
 	public void autoGoodMorning() {
 		List<userDto> lists = impl.selectAll();
 		for (userDto dto:lists) {
